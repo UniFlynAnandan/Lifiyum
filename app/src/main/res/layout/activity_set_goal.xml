@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".basicactivitys.SetGoal_Activity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+
+                android:src="@drawable/back" />
+
+
+            <ImageView
+                android:id="@+id/status_icon"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_run" />
+
+            <TextView
+                android:id="@+id/txt_icontitle"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:background="@null"
+                android:fontFamily="@font/dmsans_bold"
+                android:gravity="start|center"
+                android:singleLine="true"
+                android:text="Run"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ic_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/lifiyum_logo_fillcolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/dmsans_bold"
+                android:text='Set a Goal'
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/tendpmargin"
+                android:layout_marginEnd="@dimen/tendpmargin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/lin_distance"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <!-- <RadioButton
+                            android:id="@+id/rb_distance"
+                            android:theme="@style/MyRaidoButton"
+                            android:layout_width="wrap_content"
+                            android:layout_margin="@dimen/fivedp_margin"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            />-->
+
+                        <TextView
+                            android:id="@+id/distance_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:gravity="center|start"
+                            android:text='Distance (Km)'
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+<RelativeLayout
+    android:layout_width="60dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="48dp">
+
+    <EditText
+        android:id="@+id/edt_distance"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edt_curved_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxEms="4"
+        android:textColor="@color/textcolor"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></EditText>
+    <View
+        android:layout_width="60dp"
+        android:id="@+id/view_distance"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        ></View>
+</RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/distance_personal_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:gravity="center|start"
+                            android:text='( Personal Best : 0 KM )'
+                            android:textColor="@color/textcolor"
+                            android:textSize="18sp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_distance"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:theme="@style/MyRaidoButton" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/teal_700"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lin_time"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/time_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:gravity="center|start"
+                            android:text='Time (Min)'
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="48dp">
+                        <EditText
+                            android:id="@+id/edt_time"
+                            android:layout_width="60dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/edt_curved_bg"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxEms="4"
+
+                            android:textColor="@color/textcolor"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+
+                            <View
+                                android:layout_width="60dp"
+                                android:id="@+id/view_time"
+                                android:layout_height="48dp"
+                                android:background="@android:color/transparent"
+                                ></View>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/distance_time_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:gravity="center|start"
+                            android:text='( Personal Best : 0 Min )'
+                            android:textColor="@color/textcolor"
+                            android:textSize="18sp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_time"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                          android:visibility="gone"
+                            android:gravity="center"
+                            android:theme="@style/MyRaidoButton" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/teal_700"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/lin_calories"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/calories_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:gravity="center|start"
+                            android:text='Calories (Cal)'
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="48dp">
+
+                        <EditText
+                            android:id="@+id/edt_calories"
+                            android:layout_width="60dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/edt_curved_bg"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxEms="4"
+                            android:textColor="@color/textcolor"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></EditText>
+
+                            <View
+                                android:layout_width="60dp"
+                                android:id="@+id/view_calories"
+                                android:layout_height="48dp"
+                                android:background="@android:color/transparent"
+                                ></View>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/calorie_personal_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:gravity="center|start"
+                            android:text='( Personal Best : 0 Cal )'
+                            android:textColor="@color/textcolor"
+                            android:textSize="18sp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_calori"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:theme="@style/MyRaidoButton" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/teal_700"></View>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/activity_vertical_marginlay"
+            android:background="@drawable/bg_btn_curved_start"
+            android:fontFamily="@font/dmsans_bold"
+            android:gravity="center"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/dmsans_regular"
+        android:gravity="right"
+        android:text='@string/skip'
+        android:textAlignment="textEnd"
+        android:textColor="@color/button_bg"
+        android:textSize="20sp"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

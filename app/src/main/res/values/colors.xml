@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FCBC39</color>
+    <color name="purple_500">#F7972F</color>
+    <color name="purple_700">#F27224</color>
+
+    <color name="teal_200">#FB4911</color>
+    <color name="teal_700">#FB4911</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="edittextbg">#E5E5E5</color>
+    <color name="textpersonalbest">#E2E0E0</color>
+    <color name="textcolor">#555252</color>
+    <color name="button_bg">#FD4D19</color>
+    <color name="graydark">#FF404040</color>
+    <color name="mapdrawline">#FB4911</color>
+
+
+</resources>

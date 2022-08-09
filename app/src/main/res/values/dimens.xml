@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin50">50dp</dimen>
+    <dimen name="activity_vertical_marginlay">16dp</dimen>
+    <dimen name="tendpmargin">10dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="fivedp_margin">5dp</dimen>
+</resources>
